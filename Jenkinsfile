@@ -1,4 +1,4 @@
-@Library('common-library2') _
+@Library('common-library') _
 
 pipeline {
 
