@@ -8,25 +8,25 @@ pipeline {
 
         stage('Build') {
             steps {
-                build()
+                buildApp()
             }
         }
 
         stage('Test') {
             steps {
-                test()
+                runTest()
             }
         }
 
         stage('Deploy') {
             steps {
-                deploy("QA")
+                deployApp("QA")
             }
         }
 
         stage('Notify') {
             steps {
-                notify()
+                sendNotification()
             }
         }
 
